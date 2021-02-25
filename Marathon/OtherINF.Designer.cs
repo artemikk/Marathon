@@ -1,7 +1,7 @@
 ﻿
 namespace Marathon
 {
-    partial class RunnerM
+    partial class OtherINF
     {
         /// <summary>
         /// Required designer variable.
@@ -42,78 +42,77 @@ namespace Marathon
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(328, 91);
+            this.label1.Location = new System.Drawing.Point(295, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.Size = new System.Drawing.Size(130, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Меню бегуна";
+            this.label1.Text = "Подробная информация";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(176, 140);
+            this.button1.Location = new System.Drawing.Point(128, 144);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 23);
+            this.button1.Size = new System.Drawing.Size(156, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Регистрация на марафон";
+            this.button1.Text = "Marathon Skills 2016";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(384, 140);
+            this.button2.Location = new System.Drawing.Point(402, 144);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 23);
+            this.button2.Size = new System.Drawing.Size(230, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Мои результаты";
+            this.button2.Text = "Насколко долгий марафон";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(176, 219);
+            this.button3.Location = new System.Drawing.Point(128, 210);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(155, 23);
+            this.button3.Size = new System.Drawing.Size(156, 23);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Редактирование профиля";
+            this.button3.Text = "Предыдущие результаты";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(384, 219);
+            this.button4.Location = new System.Drawing.Point(402, 210);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(98, 23);
+            this.button4.Size = new System.Drawing.Size(230, 23);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Мой спонсор";
+            this.button4.Text = "Список благотворительных организаций";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(326, 312);
+            this.button5.Location = new System.Drawing.Point(128, 274);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(156, 23);
             this.button5.TabIndex = 5;
-            this.button5.Text = "Контакты";
+            this.button5.Text = "BMI калькулятор";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(37, 29);
+            this.button6.Location = new System.Drawing.Point(402, 274);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(230, 23);
             this.button6.TabIndex = 6;
-            this.button6.Text = "Назад";
+            this.button6.Text = "BMR калькулятор";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(680, 29);
+            this.button7.Location = new System.Drawing.Point(33, 33);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(156, 23);
             this.button7.TabIndex = 7;
-            this.button7.Text = "Logout";
+            this.button7.Text = "Назад";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // RunnerM
+            // OtherINF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -126,8 +125,8 @@ namespace Marathon
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Name = "RunnerM";
-            this.Text = "RunnerM";
+            this.Name = "OtherINF";
+            this.Text = "OtherINF";
             this.ResumeLayout(false);
             this.PerformLayout();
 

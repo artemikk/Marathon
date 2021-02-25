@@ -10,23 +10,16 @@ using System.Windows.Forms;
 
 namespace Marathon
 {
-    public partial class RunnerM : Form
+    public partial class OtherINF : Form
     {
-        public RunnerM()
+        public OtherINF()
         {
             InitializeComponent();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Login cpt = new Login();
-            cpt.Show();
-            this.Hide();
-        }
-
         private void button7_Click(object sender, EventArgs e)
         {
-            Login cpt = new Login();
+            Form1 cpt = new Form1();
             cpt.Show();
             this.Hide();
         }

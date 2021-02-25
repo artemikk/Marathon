@@ -33,7 +33,14 @@ namespace Marathon
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Login_or_registration cpt = new Login_or_registration();
+            Login cpt = new Login();
+            cpt.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OtherINF cpt = new OtherINF();
             cpt.Show();
             this.Hide();
         }
