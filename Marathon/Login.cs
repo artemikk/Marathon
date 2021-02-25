@@ -15,6 +15,8 @@ namespace Marathon
         public static DataBase db = new DataBase();
         public static User USR { get; set; }
         public static Login LOG { get; set; }
+        bool enter = false;
+
         public Login()
         {
             InitializeComponent();
@@ -29,53 +31,66 @@ namespace Marathon
         private void button2_Click(object sender, EventArgs e)
         {
 
-            if (textBox1.Text == "" || textBox2.Text == "")
+            if (enter == false)
             {
-                MessageBox.Show("Введите логин и пароль!");
-                return;
-            }
-            User usr = db.Users.Find(textBox1.Text);
-
-            if ((usr != null) && (usr.Password == textBox2.Text))
-            {
-
-                USR = usr;
-                LOG = this;
-
-
-                if (usr.RoleId == "A")
+                if (textBox1.Text == "" || textBox2.Text == "")
                 {
-                    AdminM am = new AdminM();
-                    am.Show();
-                    this.Close();
+                    MessageBox.Show("Введите логин и пароль!");
+                    return;
                 }
-                else if (usr.RoleId == "R")
+
+                User usr = db.Users.Find(textBox1.Text);
+                if (textBox1.Text == "" || textBox2.Text == "")
                 {
-                    RunnerM rm = new RunnerM();
-                    rm.Show();
-                    this.Close();
+                    MessageBox.Show("Введите логин и пароль!");
+                    return;
                 }
-            else
+
+                if ((usr != null) && (usr.Password == textBox2.Text))
                 {
-                    MessageBox.Show("Вы уже авторизованы в системе");
-                    if (USR.RoleId == "A")
+                    USR = usr;
+                    LOG = this;
+
+                    if (usr.RoleId == "A")
                     {
                         AdminM am = new AdminM();
                         am.Show();
                         this.Close();
                     }
-                    else if (USR.RoleId == "R")
+                    else if (usr.RoleId == "R")
                     {
                         RunnerM rm = new RunnerM();
                         rm.Show();
                         this.Close();
                     }
-                    else if (USR.RoleId == "C")
-                    {
-                        CoordinatorM cm = new CoordinatorM();
-                        cm.Show();
-                        this.Close();
-                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Пользователя с таким логином и паролем нет!");
+                    return;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Вы уже авторизованы в системе");
+                if (USR.RoleId == "A")
+                {
+                    AdminM am = new AdminM();
+                    am.Show();
+                    this.Close();
+                }
+                else if (USR.RoleId == "R")
+                {
+                    RunnerM rm = new RunnerM();
+                    rm.Show();
+                    this.Close();
+                }
+                else if (USR.RoleId == "C")
+                {
+                    CoordinatorM cm = new CoordinatorM();
+                    cm.Show();
+                    this.Close();
                 }
             }
         }
